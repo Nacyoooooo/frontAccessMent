@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.ResponseBody
-import com.chenzhihao.frontassessment.Common.Results as Result
+import com.chenzhihao.frontassessment.Common.Results
 @Controller
 @RequestMapping("/test")
 class TestController {
@@ -14,12 +14,12 @@ class TestController {
      */
     @RequestMapping
     @ResponseBody
-    fun login():Result<Any> {
+    fun login(): Results<Any> {
         return Results.ok(data = "test")
     }
     @RequestMapping("/fail")
     @ResponseBody
-    fun fail(@RequestBody users: Users):Result<Any> {
+    fun fail(@RequestBody users: Users) : Results<Any> {
         println(users)
         return Results.fail()
     }
