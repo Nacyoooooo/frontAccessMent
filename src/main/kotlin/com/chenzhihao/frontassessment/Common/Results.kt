@@ -8,10 +8,10 @@ class Results<T> internal constructor(val status: Int,
     companion object{
         val SUCCESS = 200
         val FAIL = 500
-        fun ok(data: Any=Any(), msg: String="操作成功",status: Int= SUCCESS): Results<Any> {
+        fun ok(data: Any= SUCCESS, msg: String="操作成功", status: Int= SUCCESS): Results<Any> {
             return Results(status, msg, data)
         }
-        fun fail(msg: String="操作失败",status: Int= FAIL,data: Any="null"): Results<Any> {
+        fun fail(msg: String="操作失败",status: Int= FAIL,data: Any= FAIL): Results<Any> {
             return Results(status, msg, data)
         }
     }
