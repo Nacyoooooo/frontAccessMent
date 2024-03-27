@@ -2,14 +2,14 @@ package com.chenzhihao.frontassessment
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
-import com.chenzhihao.frontassessment.Common.Result
+import com.chenzhihao.frontassessment.Common.Results
 @SpringBootTest
-class ResultTest {
+class ResultsTest {
     @Test
     fun testResult(){
-        val ok=Result.ok("123", msg = "123")
+        val ok=Results.ok("123", msg = "123")
         println(ok)
-        val fail=Result.fail(msg = "666")
+        val fail=Results.fail(msg = "666")
         println(fail)
     }
 }
