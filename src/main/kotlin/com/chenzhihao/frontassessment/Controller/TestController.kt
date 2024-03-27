@@ -1,6 +1,6 @@
 package com.chenzhihao.frontassessment.Controller
 
-import com.chenzhihao.frontassessment.Model.Users
+import com.chenzhihao.frontassessment.Model.Test
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
@@ -19,8 +19,8 @@ class TestController {
     }
     @RequestMapping("/fail")
     @ResponseBody
-    fun fail(@RequestBody users: Users) : Results<Any> {
-        println(users)
+    fun fail(@RequestBody test: Test) : Results<Any> {
+        println(test)
         return Results.fail()
     }
 }

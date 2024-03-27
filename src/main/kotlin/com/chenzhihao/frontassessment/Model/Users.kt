@@ -1,7 +1,19 @@
 package com.chenzhihao.frontassessment.Model
 
-class Users internal constructor(val name:String,val age:Int){
-    override fun toString(): String {
-        return "Users(name='$name', age=$age)"
-    }
+import lombok.Data
+
+/**
+ * 用户类
+ */
+@Data
+class Users internal constructor(var name:String,
+                                 var postbox:String,
+                                 var phone:String,
+                                 var date:String,
+                                 var gender:String,
+                                 var education:String,
+                                 var location:String,
+                                 var idNumber:String,
+                                 var work:String,
+){
 }
