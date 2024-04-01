@@ -1,6 +1,18 @@
 spring:
   application:
     name: MetaCodeF
+  jackson:
+    mapper:
+      allow-void-valued-properties: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
 server:
   port: 8585
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
 

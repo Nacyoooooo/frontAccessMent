@@ -8,6 +8,6 @@ import org.springframework.stereotype.Service
 @Service
 interface PositionService {
     fun position(): Results<Any>
-    fun search(searchInfo: SearchDto): Results<Any>
-    fun message(searchInfo: SearchMsgDto): Results<Any>
+    fun search(searchInfo: SearchDto?): Results<Any>
+    fun message(searchInfo: SearchMsgDto?): Results<Any>
 }
