@@ -27,7 +27,7 @@ https://app.mokahr.com/social-recruitment/kuro/46886#/home
 
 采用python脚本形式获取数据
 
-脚本存放于src/main/python的resource文件夹下，使用Anconda作为包管理器
+脚本存放于src/main/python文件夹下，使用Anconda作为包管理器
 
 ```cmd
 # create new anaconda env
